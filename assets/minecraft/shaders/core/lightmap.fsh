@@ -14,9 +14,9 @@ layout(std140) uniform LightmapInfo {
     vec3 NightVisionColor;
 } lightmapInfo;
 
-layout(location = 0) in vec2 texCoord;
+in vec2 texCoord;
 
-layout(location = 0) out vec4 fragColor;
+out vec4 fragColor;
 
 float get_brightness(float level) {
     return level / (4.0 - 3.0 * level);
